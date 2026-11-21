@@ -1,0 +1,138 @@
+commit: 8e2efe921a901c2d621e43575fc847c3e9cf25ea
+job status: success
+=== тесты ===
+    Updating crates.io index
+     Locking 650 packages to highest compatible versions
+      Adding base64 v0.22.1 (available: v0.23.1)
+      Adding generic-array v0.14.7 (available: v0.14.9)
+      Adding rand v0.8.8 (available: v0.10.4)
+      Adding sha1 v0.10.7 (available: v0.11.0)
+      Adding sha2 v0.10.9 (available: v0.11.1)
+      Adding toml v0.8.2 (available: v0.8.23)
+      Adding toml_datetime v0.6.3 (available: v0.6.11)
+      Adding toml_edit v0.20.2 (available: v0.20.7)
+      Adding ureq v2.12.1 (available: v3.5.2)
+      Adding zip v2.6.1 (available: v9.8.1)
+warning: unused import: `std::time::Duration`
+ --> core\tests\stage7_test.rs:2:5
+  |
+2 | use std::time::Duration;
+  |     ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `friendlauncher-core` (test "stage7_test") generated 1 warning (run `cargo fix --test "stage7_test" -p friendlauncher-core` to apply 1 suggestion)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2m 10s
+     Running unittests src\lib.rs (target\debug\build\friendlauncher-core/1fa77246dc63a36f\out\friendlauncher_core-1fa77246dc63a36f.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\room_net.rs (target\debug\build\friendlauncher-core/d2a32e4ffb688160\out\room_net-d2a32e4ffb688160.exe)
+
+running 3 tests
+test tunnel_end_to_end ... ignored
+test detect_port_from_log ... ok
+test parse_netstat_listeners ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\selfupdate_test.rs (target\debug\build\friendlauncher-core/31564e142ef100e5\out\selfupdate_test-31564e142ef100e5.exe)
+
+running 2 tests
+test version_compare_is_numeric ... ok
+test check_and_download ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\server_test.rs (target\debug\build\friendlauncher-core/28b417583c8e2b84\out\server_test-28b417583c8e2b84.exe)
+
+running 6 tests
+test percent_decoding ... ok
+test api_method_rules ... ok
+test security_token_and_host ... ok
+test api_state_poll_ping ... ok
+test settings_save_and_validate ... ok
+test static_files_and_csp ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\stage2_test.rs (target\debug\build\friendlauncher-core/ea6c8f82673f5c09\out\stage2_test-ea6c8f82673f5c09.exe)
+
+running 5 tests
+test screenshots ... ok
+test instances_crud ... ok
+test http_upload_and_images ... ok
+test mods_list_toggle_delete ... ok
+test worlds_and_backup ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\stage3_test.rs (target\debug\build\friendlauncher-core/45bde365c14a8b1e\out\stage3_test-45bde365c14a8b1e.exe)
+
+running 4 tests
+test inherits_and_args ... ok
+test version_lists ... ok
+test sha_mismatch_fails_and_leaves_no_file ... ok
+test game_files_full_install ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\stage4_test.rs (target\debug\build\friendlauncher-core/89f0ca5e5626d727\out\stage4_test-89f0ca5e5626d727.exe)
+
+running 5 tests
+test ensure_fresh_microsoft_expiry ... ok
+test split_args_quotes ... ok
+test java_runtime_download ... ok
+test prepare_game_fabric_and_ely ... ok
+test pump_collects_output_and_code ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests\stage5_test.rs (target\debug\build\friendlauncher-core/058e5df3133e4646\out\stage5_test-058e5df3133e4646.exe)
+
+running 4 tests
+test browser_login_error_and_cancel ... ok
+test refresh_and_ely ... ok
+test skin_library_and_profile ... ok
+test browser_login_with_pkce_and_wrong_state ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests\stage6a_test.rs (target\debug\build\friendlauncher-core/6ccb691a8ad07b43\out\stage6a_test-6ccb691a8ad07b43.exe)
+
+running 5 tests
+test curseforge_key_search_install_and_blocked ... ok
+test import_curseforge_pack_with_blocked_file ... ok
+test import_mrpack_trusted_hosts_and_rollback ... ok
+test modrinth_search_install_with_deps_and_updates ... ok
+test export_import_roundtrip_and_prism ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+     Running tests\stage7_test.rs (target\debug\build\friendlauncher-core/da18b414bcb64493\out\stage7_test-da18b414bcb64493.exe)
+
+running 2 tests
+test theme_is_validated ... ok
+test applog_writes_files ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests friendlauncher_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+=== сеть ===
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.35s
+     Running tests\room_net.rs (target\debug\build\friendlauncher-core/d2a32e4ffb688160\out\room_net-d2a32e4ffb688160.exe)
+
+running 1 test
+test tunnel_end_to_end ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.92s
+
+=== сборка ===
+    Finished `release` profile [optimized] target(s) in 6m 09s
